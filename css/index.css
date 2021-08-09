@@ -1,8 +1,8 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
+   CSS RESET
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -42,105 +42,285 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-* {
-    box-sizing: border-box;
-    margin: 0;
-    max-width: 100%;
-    border: 1px solid red;
+*{
+    box-sizing: border-box; /*when I give an item a width I want padding and margin to be applied within that width not in addition to it*/
+    padding:0;
+    margin:0;
+    max-width:100%;
+    border:1px solid grey;
 }
 
 /*General Styles*/
-html {
-    font-size: 62.5%;
+html{
+    font-size:62.5%;
 }
-body {
-    font-size: 1.6rem;
-    line-height: 1.5;
+body{
+    font-size:1.8rem;
+    line-height:1.5;
     background-color: #FBFFFB;
+    color:#4f4f4f; 
+    font-family: 'Source Sans Pro', sans-serif;
 }
-h1 {
-    font-size: 5rem;
+h1, h2, h3{
+    font-family: 'Oxygen', sans-serif;
+}
+h1{
+    font-size:7rem;
     color: #FBFFFB;
 }
-h2 {
-    font-size: 3rem;
-    text-align: center;
+h2{
+    font-size:4rem;
+    text-align:center;
+    color: #266035;
+    margin-bottom:4%;
 }
-h3 {
-    font-size: 2.5rem;
-    text-align: center;
+h3{
+    font-size:2.5rem;
+    text-align:center;
+    color: #266035;
+    margin-bottom:4%;
 }
-section {
-    padding: 4%;
+a{
+    text-decoration:none;
+    font-family: 'Source Sans Pro', sans-serif;
+    color:#266035;
 }
-/*helper classes*/
-.bgimg {
-    background-size: cover;
+section{
+    padding:4% 0;
+}
+button{
+    padding: 2% 4%;
+    margin-top: 4%;
+    font-size:1.8rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    transition:2s;
+}
+/*Helper Classes*/
+.bgimg{
+    background-size:cover;
     background-repeat: no-repeat;
 }
-nav {
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
+/*Header*/
+nav{
+    display:flex;
+    justify-content:space-between;
+    position:fixed;
+    top:0;
+    width:100%;
+    background-color:rgba(255, 255, 255, 0.8);
     z-index: 999;
 }
-.logo {
-    width: 5%;
+.logo{
+    width:5%;
 }
-.links {
-    width: 50%;
-    display: flex;
+.links{
+    width:50%;
+    display:flex;
     justify-content: space-evenly;
     align-items: center;
 }
+
+/*top section styles*/
 #top{
-    height: 80vh;
+    height:80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("../images/header.jpg");
-    background-position: bottom;
+    background-image:url('../images/header.jpg');
+    background-position:bottom;
 }
 
 /*About Section Styles*/
-#about {
-    display: flex;
+#about{
+    display:flex;
     justify-content: flex-end;
-    padding: 20% 0;
-    background-image: url(../images/about-img.jpg);
-    background-position: center;
+    padding:20% 0;
+    background-image:url('../images/about-img.jpg');
+    background-position:center;
 }
-#about div {
-    width: 20%;
-    margin-right: 10%;
+#about div{
+   width:20%;
+   margin-right:10%; 
+}
+#top button{
+    color:#266035;
+}
+#top button:hover{
+    color:#fff;
+    background-color:#266035;
+}
+/*shop section styles*/
+#shop{
+    padding-bottom:0;
+}
+#shop button{
+    color:#fff;
+    background-color:#266035;
+}
+#shop button:hover{
+    color:#266035;
+    background-color:#fff;
+    border:2px solid #266035;
+}
+.container{
+    display:flex;
+    flex-wrap:wrap;
+}
+.text, .succulants, .cacti, .tropicals{
+    width:50%;
+}
+.text{
+    padding:8%;
+    text-align:center;
+}
+.text div{
+    width:60%;
+    margin:0 auto;
+}
+.succulants{
+    background-image: url('../images/succulants.jpg');
+    background-position:bottom;
+}
+.cacti{
+    background-image: url('../images/cacti.jpg');
+    background-position:center;
+}
+.tropicals{
+    background-image: url('../images/tropicals.jpg');
+    background-position:center;
 }
 
-/*shop section stlyes*/
-.container {
-    display: flex;
-    flex-wrap: wrap;
+/*Footer Section Styles*/
+
+footer{
+    background-color:#266035;
+    color:#fff;
+    display:flex;
+    flex-wrap:wrap;
+    padding:4% 0;
 }
-.text, .succulents, .cacti, .tropicals {
-    width: 50%;
+footer h2{
+    color:#fff;
+    width:100%;
 }
-.text {
-    padding: 5%;
-    text-align: center;
+footer h3{
+    color:#fff;
+    text-align:left;
 }
-.text div {
-    width: 60%;
-    margin: 0 auto;
+footer a{
+    color: #fff;
 }
-.succulents {
-    background-image: url(../images/succulants.jpg);
+.right, .left{
+    width:50%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
 }
-.cacti {
-    background-image: url(../images/cacti.jpg);
+.right img{
+    width:50%;
 }
-.tropicals {
-    background-image: url(../images/tropicals.jpg);
+.left div{
+    width:50%;
+    line-height:2.5;
+}
+.bottom{
+    width:100%;
+}
+.bottom p{
+    text-align:right;
+    margin-right:5%;
+    margin-top:5%;
+}
+
+/*Media Queries go here*/
+/*
+desktop first design - means we scale down - we use max-width
+mobile first design - means we scale up - we use min-width
+*/
+/*tablet view - 800px*/
+/*when the screen size reaches 800px or smaller these rules apply*/
+@media (max-width: 800px){
+    #top{
+        margin-top: -8%;
+    }
+    #about div{
+        width:40%;
+        margin-right:3%; 
+     }
+     .text{
+        padding:4%;
+        text-align:center;
+    }
+    .right img{
+        width:70%;
+    }
+}
+
+/*when the screen size reaches 500px or smaller these rules apply*/
+/*mobile view 500px*/
+@media (max-width: 500px){
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    .logo{
+        width:10%;
+    }
+    .links{
+        width:100%;
+    }
+    h1{
+        font-size:5rem;
+    }
+    #about{
+        background-image:none;
+        background-color:lightgrey;
+        justify-content: center;
+        align-items:center;
+        padding:4% 0;
+        text-align:center;
+    }
+    #about div{
+        width:80%;
+        margin-right:0;
+    }   
+    .container{
+        justify-content:center;
+    }  
+    .text, .succulants, .cacti, .tropicals{
+        width:100%;
+    }
+    .succulants, .cacti, .tropicals{
+        height:50vh;
+    }
+    .one{
+        order:1;
+    }
+    .two{
+        order:2;
+    }
+    .three{
+        order:3;
+    }
+    .four{
+        order:4;
+    }
+    .five{
+        order:5;
+    }
+    .six{
+        order:6;
+    }
+    .right, .left{
+        width:100%;
+    }
+    .bottom p{
+        text-align:center;
+        margin-right:0;
+    }
+    .left div{
+        width:60%;
+        line-height:2;
+    }
 }
