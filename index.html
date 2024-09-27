@@ -1,15 +1,92 @@
-<!DOCTYPE html>
+!<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Add Google Fonts here-->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <!--Link your stylesheet here-->
-
+    <link rel="stylesheet" href="css/index.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="logo for the watering can">
+            </div>
+            <div class="links">
+                <a href="#top">Home</a>
+                <a href="#about">About</a>
+                <a href="#shop">Shop</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <section id="top" class="bgimg">
+        <div class="main-titles">
+            <h1>The Watering Can</h1>
+            <button>Shop Our Indoor Plant Sale</button>
+        </div>
+    </section>
+    <section id="about" class="bgimg">
+        <div>
+            <h2>Our Story</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi officiis explicabo quasi qui aliquid similique quidem odio. Delectus vel, atque, excepturi aspernatur, eos pariatur distinctio aliquam corrupti ullam magni cum.</p>
+        </div>
+    </section>
+    <section id="shop">
+        <!--number classes are added to change order in mobile-->
+        <h2>Our Plants</h2>
+        <div class="container">
+            <div class="succulants bgimg one"><!--Empty div for background image--></div>
+            <div class="text two">
+                <div>
+                    <h3>Succulants</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus recusandae autem nulla ea assumenda, neque doloremque tempora praesentium iure exercitationem asperiores accusamus et a quo laudantium voluptates magni, molestias ipsum?</p>
+                    <button>Shop Now!</button>
+                </div>
+            </div><!--this closes the text div-->
+            <div class="text four">
+                <div>
+                    <h3>Cacti</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id unde in iure enim, expedita at ea? Culpa modi repellat vel deleniti magnam! Eum quidem deserunt est dicta aut optio magni.</p>
+                    <button>Shop Now!</button>
+                </div>
+            </div><!--this closes the text div-->
+            <div class="cacti bgimg three"><!--Empty div for background image --></div>
+            <div class="tropicals bgimg five"><!-- empty div for background image --></div>
+            <div class="text six">
+                <div>
+                    <h3>Tropicals</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam accusantium error, hic rem quis maiores eum asperiores quisquam architecto cumque voluptas illo ullam ratione delectus, facilis similique cupiditate illum tempora?</p>
+                    <button>Shop Now!</button>
+                </div>
+            </div><!--this closes the text div-->
+        </div><!--This closes the container div-->
+    </section>
+    <footer id="contact">
+        <h2 class="one">Get In Touch !</h2>
+        <div class="left three">
+            <div>
+                <h3>Find Us Here:</h3>
+                <address>123 Plant Lane<br>
+                Bloomfield Ontario, <br>
+                Canada L2G 0X7</address>
+
+                <a href="tel:+1-613-978-8282">+1-613-978-8282</a><br>
+                <a href="mailto:info@thewateringcan.ca">info@thewateringcan.ca</a>
+                <p>@thewateringcan on the socials</p>
+            </div>
+        </div>
+        <div class="right two">
+            <img src="images/shop.jpg" alt="the front room of the inside of the shop">
+        </div>
+        <div class="bottom four">
+            <p>Copyright design by Brit Hemming 2021</p>
+        </div>
+    </footer>
 </body>
 </html>
